@@ -63,6 +63,13 @@
                             <a href="{{route('admin.create')}}" class="dropdown-item">Add Post</a>
                         </div>
                     </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>works posts</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="{{route('work.index')}}" class="dropdown-item">All Posts</a>
+                            <a href="{{route('work.create')}}" class="dropdown-item">Add Post</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>

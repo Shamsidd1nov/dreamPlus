@@ -3,6 +3,7 @@
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\WorksPostController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -34,4 +35,6 @@ Route::get('/logout',function(){
 })->name('logout');
 
 Route::resource('/admin',PostController::class)->middleware('auth');
+
+Route::resource('/work',WorksPostController::class)->middleware('auth');
 
